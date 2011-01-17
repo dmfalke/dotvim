@@ -1,0 +1,256 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ComplexType	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class ComplexType(Type):$/;"	c
+DEBUG	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^DEBUG = False$/;"	v
+Enum	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class Enum(SimpleType):$/;"	c
+Error	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class Error(ComplexType):$/;"	c
+Event	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class Event(ComplexType):$/;"	c
+ExprType	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class ExprType(Type):$/;"	c
+Expression	/opt/local/lib/python2.6/site-packages/xcbgen/expr.py	/^class Expression(object):$/;"	c
+Expression	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^from expr import Field, Expression$/;"	i
+Field	/opt/local/lib/python2.6/site-packages/xcbgen/expr.py	/^class Field(object):$/;"	c
+Field	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^from expr import Field, Expression$/;"	i
+GitCachedNotes	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^class GitCachedNotes(GitNotes):$/;"	c
+GitExporter	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/exporter.py	/^class GitExporter(object):$/;"	c
+GitFICommit	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^class GitFICommit(object):$/;"	c
+GitFastImport	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^class GitFastImport(object):$/;"	c
+GitImporter	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/importer.py	/^class GitImporter(object):$/;"	c
+GitNotes	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^class GitNotes(object):$/;"	c
+GitObjectFetcher	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^class GitObjectFetcher(object):$/;"	c
+GitRefMap	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^class GitRefMap(object):$/;"	c
+GitRepo	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/repo.py	/^class GitRepo(object):$/;"	c
+ListType	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class ListType(Type):$/;"	c
+Module	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^class Module(object):$/;"	c
+Namespace	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^class Namespace(object):$/;"	c
+NonLocalGit	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/non_local.py	/^class NonLocalGit(object):$/;"	c
+PadType	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class PadType(Type):$/;"	c
+ProgressIndicator	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^class ProgressIndicator(object):$/;"	c
+Reply	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class Reply(ComplexType):$/;"	c
+Request	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class Request(ComplexType):$/;"	c
+ResolveException	/opt/local/lib/python2.6/site-packages/xcbgen/error.py	/^class ResolveException(Exception):$/;"	c
+SHA1RE	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    SHA1RE = re.compile(r'^[0-9a-f]{40}$')$/;"	v	class:GitFICommit
+SimpleType	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class SimpleType(Type):$/;"	c
+States	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^    States = ("|", "\/", "-", "\\\\")$/;"	v	class:ProgressIndicator
+StringIO	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^from cStringIO import StringIO$/;"	i
+Struct	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class Struct(ComplexType):$/;"	c
+TestGitFICommit	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^class TestGitFICommit(unittest.TestCase):$/;"	c
+Type	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class Type(object):$/;"	c
+Union	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^class Union(ComplexType):$/;"	c
+_ObjHandler	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^        class _ObjHandler(object):$/;"	c	function:GitObjectFetcher.get_sha1
+_ObjHandler	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^        class _ObjHandler(object):$/;"	c	function:GitObjectFetcher.open_obj
+_ObjHandler	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^        class _ObjHandler(object):$/;"	c	function:GitObjectFetcher.walk_tree
+__call__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^            def __call__ (self, parser, obj, sha1, t, size, data):$/;"	m	class:GitObjectFetcher.get_sha1._ObjHandler	file:
+__call__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^            def __call__ (self, parser, obj, sha1, t, size, data):$/;"	m	class:GitObjectFetcher.open_obj._ObjHandler	file:
+__call__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^            def __call__ (self, parser, obj, sha1, t, size, data):$/;"	m	class:GitObjectFetcher.walk_tree._ObjHandler	file:
+__call__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^    def __call__ (self, msg = None, lf = False):$/;"	m	class:ProgressIndicator	file:
+__contains__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def __contains__ (self, refname):$/;"	m	class:GitRefMap	file:
+__del__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def __del__ (self):$/;"	m	class:GitCachedNotes	file:
+__del__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def __del__ (self):$/;"	m	class:GitNotes	file:
+__del__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def __del__ (self):$/;"	m	class:GitObjectFetcher	file:
+__getitem__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def __getitem__ (self, objname):$/;"	m	class:GitNotes	file:
+__getitem__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def __getitem__ (self, refname):$/;"	m	class:GitRefMap	file:
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/exporter.py	/^    def __init__(self, repo):$/;"	m	class:GitExporter
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^            def __init__ (self, parser):$/;"	m	class:GitObjectFetcher.get_sha1._ObjHandler
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^            def __init__ (self, parser):$/;"	m	class:GitObjectFetcher.open_obj._ObjHandler
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^            def __init__ (self, parser, cb, path, mode = None):$/;"	m	class:GitObjectFetcher.walk_tree._ObjHandler
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def __init__ (self):$/;"	m	class:GitObjectFetcher
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def __init__ (self, f, obj_fetcher, last_mark = 0):$/;"	m	class:GitFastImport
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def __init__ (self, name, email, timestamp, timezone, message):$/;"	m	class:GitFICommit
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def __init__ (self, notes_ref, obj_fetcher):$/;"	m	class:GitCachedNotes
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def __init__ (self, notes_ref, obj_fetcher):$/;"	m	class:GitNotes
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def __init__ (self, obj_fetcher):$/;"	m	class:GitRefMap
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/importer.py	/^    def __init__(self, repo):$/;"	m	class:GitImporter
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/non_local.py	/^    def __init__(self, repo):$/;"	m	class:NonLocalGit
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/repo.py	/^    def __init__(self, path):$/;"	m	class:GitRepo
+__init__	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^    def __init__ (self, prefix = "", f = sys.stdout):$/;"	m	class:ProgressIndicator
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/expr.py	/^    def __init__(self, elt, parent):$/;"	m	class:Expression
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/expr.py	/^    def __init__(self, type, field_type, field_name, visible, wire, auto):$/;"	m	class:Field
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def __init__(self, filename):$/;"	m	class:Namespace
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def __init__(self, filename, output):$/;"	m	class:Module
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def __init__(self, elt):$/;"	m	class:PadType
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def __init__(self, elt, member, parent):$/;"	m	class:ExprType
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def __init__(self, elt, member, parent):$/;"	m	class:ListType
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def __init__(self, name):$/;"	m	class:Type
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def __init__(self, name, elt):$/;"	m	class:ComplexType
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def __init__(self, name, elt):$/;"	m	class:Enum
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def __init__(self, name, elt):$/;"	m	class:Error
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def __init__(self, name, elt):$/;"	m	class:Event
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def __init__(self, name, elt):$/;"	m	class:Reply
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def __init__(self, name, elt):$/;"	m	class:Request
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def __init__(self, name, elt):$/;"	m	class:Union
+__init__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def __init__(self, name, size):$/;"	m	class:SimpleType
+__main__	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^import __main__$/;"	i
+__main__	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^import __main__$/;"	i
+_load	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def _load (self, objname):$/;"	m	class:GitCachedNotes
+_load	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def _load (self, objname):$/;"	m	class:GitNotes
+_load	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def _load (self, ref):$/;"	m	class:GitRefMap
+_new_method	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^    def _new_method (self, filename, *args, **kwargs):$/;"	f	function:file_writer_method
+_placeholder_byte	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^_placeholder_byte = Field(PadType(None), tcard8.name, 'pad0', False, True, False)$/;"	v
+_submit_next_object	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def _submit_next_object (self):$/;"	m	class:GitObjectFetcher
+_wrap	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^    def _wrap (method):$/;"	f	function:file_reader_method
+_wrapped_method	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^        def _wrapped_method (self, filename, *args, **kwargs):$/;"	f	function:file_reader_method._wrap
+add_error	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def add_error(self, id, name, item):$/;"	m	class:Module
+add_event	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def add_event(self, id, name, item):$/;"	m	class:Module
+add_import	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def add_import(self, name, namespace):$/;"	m	class:Module
+add_opcode	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def add_opcode(self, opcode, name, main):$/;"	m	class:Error
+add_opcode	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def add_opcode(self, opcode, name, main):$/;"	m	class:Event
+add_request	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def add_request(self, id, name, item):$/;"	m	class:Module
+add_type	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def add_type(self, id, ns, name, item):$/;"	m	class:Module
+basename	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^from os.path import dirname, basename$/;"	i
+blob	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def blob (self, data):$/;"	f
+calc_size	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def calc_size(self):$/;"	m	class:ComplexType
+clone	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/non_local.py	/^    def clone(self, base):$/;"	m	class:NonLocalGit
+close	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    close = __main__.output['close']$/;"	v	class:Module
+comment	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def comment (self, s):$/;"	m	class:GitFastImport
+commit	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def commit (self, ref, commitdata):$/;"	m	class:GitFastImport
+commit_notes	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def commit_notes (self, gfi, author, message):$/;"	m	class:GitNotes
+copy	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def copy (self, path, newpath):$/;"	m	class:GitFICommit
+debug	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^from git_remote_helpers.util import debug, error, die, start_command, run_command$/;"	i
+debug	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^def debug (msg, *args):$/;"	f
+delete	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def delete (self, path):$/;"	m	class:GitFICommit
+deleteall	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def deleteall (self):$/;"	m	class:GitFICommit
+die	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^from git_remote_helpers.util import debug, error, die, start_command, run_command$/;"	i
+die	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/non_local.py	/^from git_remote_helpers.util import die, warn$/;"	i
+die	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^def die (msg, *args):$/;"	f
+dirname	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^from os.path import dirname, basename$/;"	i
+do_import	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/importer.py	/^    def do_import(self, base):$/;"	m	class:GitImporter
+enum	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def enum(node, module, namespace):$/;"	f
+error	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^from git_remote_helpers.util import debug, error, die, start_command, run_command$/;"	i
+error	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^def error (msg, *args):$/;"	f
+error	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def error(node, module, namespace):$/;"	f
+errorcopy	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def errorcopy(node, module, namespace):$/;"	f
+event	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def event(node, module, namespace):$/;"	f
+eventcopy	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def eventcopy(node, module, namespace):$/;"	f
+execute	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def execute(module, namespace):$/;"	f
+expect_fail	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^        def expect_fail (method, data):$/;"	f	function:TestGitFICommit.test_basic
+export_repo	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/exporter.py	/^    def export_repo(self, base):$/;"	m	class:GitExporter
+file_reader_method	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^def file_reader_method (missing_ok = False):$/;"	f
+file_writer_method	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^def file_writer_method (method):$/;"	f
+finish	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^    def finish (self, msg = "done", noprefix = False):$/;"	m	class:ProgressIndicator
+fixed_size	/opt/local/lib/python2.6/site-packages/xcbgen/expr.py	/^    def fixed_size(self):$/;"	m	class:Expression
+fixed_size	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def fixed_size(self):$/;"	m	class:ComplexType
+fixed_size	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def fixed_size(self):$/;"	m	class:Enum
+fixed_size	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def fixed_size(self):$/;"	m	class:ExprType
+fixed_size	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def fixed_size(self):$/;"	m	class:ListType
+fixed_size	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def fixed_size(self):$/;"	m	class:PadType
+fixed_size	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def fixed_size(self):$/;"	m	class:SimpleType
+fixed_size	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def fixed_size(self):$/;"	m	class:Type
+funcs	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^funcs = {'import' : import_,$/;"	v
+generate	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def generate(self):$/;"	m	class:Module
+get	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def get (self, objname, default = None):$/;"	m	class:GitNotes
+get	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def get (self, refname, default = None):$/;"	m	class:GitRefMap
+get_error	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def get_error(self, id):$/;"	m	class:Module
+get_event	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def get_event(self, id):$/;"	m	class:Module
+get_git_dir	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^def get_git_dir ():$/;"	f
+get_head	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/repo.py	/^    def get_head(self):$/;"	m	class:GitRepo
+get_revs	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/repo.py	/^    def get_revs(self):$/;"	m	class:GitRepo
+get_sha1	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def get_sha1 (self, objspec):$/;"	m	class:GitObjectFetcher
+get_type	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def get_type(self, id):$/;"	m	class:Module
+get_type_impl	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def get_type_impl(self, id, idx):$/;"	m	class:Module
+get_type_name	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def get_type_name(self, id):$/;"	m	class:Module
+git_config_bool	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^def git_config_bool (value):$/;"	f
+has_import	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def has_import(self, name):$/;"	m	class:Module
+hexlify	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^from binascii import hexlify$/;"	i
+import_	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def import_(node, module, namespace):$/;"	f
+import_note	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def import_note (self, objname, data, gfi):$/;"	m	class:GitCachedNotes
+import_note	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def import_note (self, objname, data, gfi):$/;"	m	class:GitNotes
+is	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^        self.f = f  # File object where fast-import stream is written$/;"	i
+is_remote	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/repo.py	/^def is_remote(url):$/;"	f
+join	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^from os.path import join$/;"	i
+make_member_of	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def make_member_of(self, module, complex_type, field_type, field_name, visible, wire, auto):$/;"	m	class:ListType
+make_member_of	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def make_member_of(self, module, complex_type, field_type, field_name, visible, wire, auto):$/;"	m	class:Type
+matcher	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^import matcher$/;"	i
+modify	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def modify (self, mode, blobname, path):$/;"	m	class:GitFICommit
+note	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def note (self, blobname, commit):$/;"	m	class:GitFICommit
+notify	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^def notify(msg, *args):$/;"	f
+open	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    open = __main__.output['open']$/;"	v	class:Module
+open_obj	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def open_obj (self, objspec):$/;"	m	class:GitObjectFetcher
+os	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/exporter.py	/^import os$/;"	i
+os	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^import os$/;"	i
+os	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/importer.py	/^import os$/;"	i
+os	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/non_local.py	/^import os$/;"	i
+os	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/repo.py	/^import os$/;"	i
+os	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^import os$/;"	i
+out	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def out(self, name):$/;"	m	class:Type
+out	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    out = __main__.output['enum']$/;"	v	class:Enum
+out	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    out = __main__.output['error']$/;"	v	class:Error
+out	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    out = __main__.output['event']$/;"	v	class:Event
+out	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    out = __main__.output['request']$/;"	v	class:Request
+out	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    out = __main__.output['simple']$/;"	v	class:SimpleType
+out	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    out = __main__.output['struct']$/;"	v	class:Struct
+out	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    out = __main__.output['union']$/;"	v	class:Union
+parse	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^from xml.etree.cElementTree import parse$/;"	i
+parse	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^from xml.etree.cElementTree import parse$/;"	i
+parse_git_config	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^def parse_git_config ():$/;"	f
+parse_mode	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def parse_mode (cls, mode):$/;"	m	class:GitFICommit
+parse_objname	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def parse_objname (cls, objname):$/;"	m	class:GitFICommit
+parse_path	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def parse_path (cls, path):$/;"	m	class:GitFICommit
+parse_tree	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^            def parse_tree (self, treedata):$/;"	m	class:GitObjectFetcher.walk_tree._ObjHandler
+popprefix	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^    def popprefix (self):$/;"	m	class:ProgressIndicator
+process	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def process (self):$/;"	m	class:GitObjectFetcher
+process_next_entry	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def process_next_entry (self):$/;"	m	class:GitObjectFetcher
+push	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def push (self, obj, callback):$/;"	m	class:GitObjectFetcher
+push	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/non_local.py	/^    def push(self, base):$/;"	m	class:NonLocalGit
+pushprefix	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^    def pushprefix (self, prefix):$/;"	m	class:ProgressIndicator
+quote_path	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def quote_path (cls, path):$/;"	m	class:GitFICommit
+re	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^import re$/;"	i
+register	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def register(self):$/;"	m	class:Module
+rename	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def rename (self, path, newpath):$/;"	m	class:GitFICommit
+request	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def request(node, module, namespace):$/;"	f
+reset	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def reset (self, ref, objname):$/;"	f
+resolve	/opt/local/lib/python2.6/site-packages/xcbgen/state.py	/^    def resolve(self):$/;"	m	class:Module
+resolve	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def resolve(self, module):$/;"	m	class:ComplexType
+resolve	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def resolve(self, module):$/;"	m	class:Enum
+resolve	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def resolve(self, module):$/;"	m	class:Error
+resolve	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def resolve(self, module):$/;"	m	class:Event
+resolve	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def resolve(self, module):$/;"	m	class:ExprType
+resolve	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def resolve(self, module):$/;"	m	class:ListType
+resolve	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def resolve(self, module):$/;"	m	class:PadType
+resolve	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def resolve(self, module):$/;"	m	class:Reply
+resolve	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def resolve(self, module):$/;"	m	class:Request
+resolve	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def resolve(self, module):$/;"	m	class:SimpleType
+resolve	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^    def resolve(self, module):$/;"	m	class:Type
+run_command	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^from git_remote_helpers.util import debug, error, die, start_command, run_command$/;"	i
+run_command	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^def run_command (args, cwd = None, shell = False, add_env = None,$/;"	f
+sanitize	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/repo.py	/^def sanitize(rev, sep='\\t'):$/;"	f
+start_command	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^from git_remote_helpers.util import debug, error, die, start_command, run_command$/;"	i
+start_command	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^def start_command (args, cwd = None, shell = False, add_env = None,$/;"	f
+state	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^import state$/;"	i
+stream	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^        self.f = f  # File object where fast-import stream is written$/;"	i
+struct	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def struct(node, module, namespace):$/;"	f
+subprocess	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/exporter.py	/^import subprocess$/;"	i
+subprocess	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/importer.py	/^import subprocess$/;"	i
+subprocess	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/non_local.py	/^import subprocess$/;"	i
+subprocess	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/repo.py	/^import subprocess$/;"	i
+subprocess	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^import subprocess$/;"	i
+sys	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/exporter.py	/^import sys$/;"	i
+sys	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^import sys$/;"	i
+tcard16	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^tcard16 = SimpleType(('uint16_t',), 2)$/;"	v
+tcard32	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^tcard32 = SimpleType(('uint32_t',), 4)$/;"	v
+tcard8	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^tcard8 = SimpleType(('uint8_t',), 1)$/;"	v
+tchar	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^tchar =  SimpleType(('char',), 1)$/;"	v
+tdouble	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^tdouble = SimpleType(('double',), 8)$/;"	v
+test_basic	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def test_basic (self):$/;"	m	class:TestGitFICommit
+test_parse_mode	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def test_parse_mode (self):$/;"	m	class:TestGitFICommit
+test_parse_objname	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def test_parse_objname (self):$/;"	m	class:TestGitFICommit
+test_parse_path	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def test_parse_path (self):$/;"	m	class:TestGitFICommit
+tfloat	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^tfloat = SimpleType(('float',), 4)$/;"	v
+time	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^import time$/;"	i
+tint16	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^tint16 = SimpleType(('int16_t',), 2)$/;"	v
+tint32	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^tint32 = SimpleType(('int32_t',), 4)$/;"	v
+tint8	/opt/local/lib/python2.6/site-packages/xcbgen/xtypes.py	/^tint8 =  SimpleType(('int8_t',), 1)$/;"	v
+typedef	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def typedef(node, module, namespace):$/;"	f
+union	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def union(node, module, namespace):$/;"	f
+unittest	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^import unittest$/;"	i
+update	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/non_local.py	/^    def update(self, base):$/;"	m	class:NonLocalGit
+valid_git_ref	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^def valid_git_ref (ref_name):$/;"	f
+walk_tree	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^    def walk_tree (self, tree_objspec, callback, prefix = ""):$/;"	m	class:GitObjectFetcher
+warn	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/non_local.py	/^from git_remote_helpers.util import die, warn$/;"	i
+warn	/opt/local/lib/python2.6/site-packages/git_remote_helpers/util.py	/^def warn(msg, *args):$/;"	f
+written	/opt/local/lib/python2.6/site-packages/git_remote_helpers/git/git.py	/^        self.f = f  # File object where fast-import stream is written$/;"	i
+xidtype	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def xidtype(node, module, namespace):$/;"	f
+xidunion	/opt/local/lib/python2.6/site-packages/xcbgen/matcher.py	/^def xidunion(node, module, namespace):$/;"	f

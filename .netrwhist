@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/dfalke/weddinginfo/templates'
+let g:netrw_dirhist_2='/Users/dfalke'
+let g:netrw_dirhist_3='/Users/dfalke/dev'
+let g:netrw_dirhist_4='/Users/dfalke/dev/memorial_garden'
+let g:netrw_dirhist_5='/Users/dfalke/dev/memorial_garden/honorees'
+let g:netrw_dirhist_6='/Users/dfalke/weddinginfo'
+let g:netrw_dirhist_7='/Users/dfalke/weddinginfo/static'
+let g:netrw_dirhist_8='/Users/dfalke/weddinginfo/static/css'
+let g:netrw_dirhist_9='/Users/dfalke/weddinginfo/templates'
