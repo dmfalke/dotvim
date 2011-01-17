@@ -8,6 +8,11 @@ set showmatch
 set incsearch
 set ruler
 syn on
+
+" Must appear before "filetype on"
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 filetype on
 
 if has("gui_running")
