@@ -8,6 +8,8 @@ set showmatch
 set incsearch
 set ruler
 syn on
+" set t_Co=255
+" colorscheme ir_black
 
 " Must appear before "filetype on"
 call pathogen#runtime_append_all_bundles()

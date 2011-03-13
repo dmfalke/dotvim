@@ -1,2 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/dfalke/dev/memorial_garden'
+let g:netrw_dirhist_2='/Users/dfalke/dev/memorial_garden/public'
+let g:netrw_dirhist_3='/Users/dfalke/weddinginfo'
+let g:netrw_dirhist_4='/Users/dfalke/weddinginfo/dewar-falke'
+let g:netrw_dirhist_5='/Users/dfalke/weddinginfo'
+let g:netrw_dirhist_6='/Users/dfalke/weddinginfo/dewar-falke'
+let g:netrw_dirhist_7='/Users/dfalke/weddinginfo'
