@@ -1,3 +1,7 @@
+" Must appear before "filetype on"
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 set nu
 set ai
 set ts=4
@@ -8,12 +12,12 @@ set showmatch
 set incsearch
 set ruler
 syn on
-" set t_Co=255
-" colorscheme ir_black
-
-" Must appear before "filetype on"
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+set t_Co=256
+"set background=dark
+"let g:solarized_termcolors=256
+"colorscheme solarized
+"colorscheme ir_black
+"colorscheme default
 
 filetype on
 

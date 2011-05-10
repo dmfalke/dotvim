@@ -2,7 +2,7 @@
 "colorscheme default
 "set background=light
 "set guifont=Menlo\ Regular:h13
-"colorscheme blackboard
+colorscheme macvim
 set guifont=Monaco:h12
 set guioptions-=T
 set columns=128
