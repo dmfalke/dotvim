@@ -1,7 +1,4 @@
-"colorscheme darkspectrum
-"colorscheme default
-"set background=light
-"set guifont=Menlo\ Regular:h13
+set background=dark
 colorscheme solarized
 set guifont=Monaco:h12
 set guioptions-=T
