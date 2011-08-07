@@ -13,18 +13,24 @@ set incsearch
 set ruler
 syn on
 set t_Co=256
-set background=dark
+"set background=dark
 "let g:solarized_termcolors=256
-colorscheme solarized
+"colorscheme solarized
 "colorscheme ir_black
-"colorscheme default
+colorscheme default
 
 filetype on
 
 set tags+=$HOME/.vim/tags/python.ctags
 
-" Filetype specific stuff
+" Open file with cursor at last position...
+autocmd BufReadPost *
+\ if line("'\"") > 0 && line("'\"") <= line("$") |
+\   exe "normal! g`\"" |
+\ endif
 
+
+" Filetype specific stuff.
 " I generally like 4-space indentation...
 autocmd FileType *                  : set ts=4 sw=4
 " ... but here are some exceptions
