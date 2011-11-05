@@ -1,6 +1,6 @@
-set background=light
+set background=dark
 colorscheme solarized
 set guifont=Monaco:h12
 set guioptions-=T
-set columns=128
-set lines=64
+set columns=114
+set lines=58

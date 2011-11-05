@@ -13,6 +13,7 @@ set incsearch
 set ruler
 syn on
 set t_Co=256
+set hlsearch
 "set background=dark
 "let g:solarized_termcolors=256
 "colorscheme solarized
@@ -29,6 +30,7 @@ autocmd BufReadPost *
 \   exe "normal! g`\"" |
 \ endif
 
+"set mouse=a
 
 " Filetype specific stuff.
 " I generally like 4-space indentation...
