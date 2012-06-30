@@ -12,13 +12,13 @@ set showmatch
 set incsearch
 set ruler
 syn on
-set t_Co=256
+"set t_Co=256
 set hlsearch
-"set background=dark
+set background=dark
 "let g:solarized_termcolors=256
-"colorscheme solarized
+colorscheme solarized
 "colorscheme ir_black
-colorscheme default
+"colorscheme default
 
 filetype on
 
