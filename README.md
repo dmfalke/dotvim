@@ -15,6 +15,7 @@ Switch to the `~/.vim` directory, and fetch submodules:
 
 
 Installing plugins as bundles:
+
     cd ~/.vim
     mkdir ~/.vim/bundle, if necessary
     git submodule add <URL-for-git-repository> bundle/<plugin-name>
