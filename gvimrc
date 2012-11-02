@@ -1,5 +1,5 @@
 "set background=light
-colorscheme default
+colorscheme distinguished
 set guifont=Monaco:h11
 set guioptions-=T
 set columns=105
