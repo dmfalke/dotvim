@@ -18,6 +18,10 @@ colorscheme distinguished
 
 filetype on
 
+" Set filetypes
+au BufRead,BufNewFile Capfile set ft=ruby
+
+
 " Open file with cursor at last position...
 autocmd BufReadPost *
 \ if line("'\"") > 0 && line("'\"") <= line("$") |
