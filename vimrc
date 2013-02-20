@@ -16,7 +16,7 @@ set t_Co=256
 syn on
 colorscheme distinguished
 
-filetype on
+filetype plugin indent on
 
 " Set filetypes
 au BufRead,BufNewFile Capfile set ft=ruby
@@ -32,6 +32,7 @@ autocmd BufReadPost *
 " I generally like 4-space indentation [no TABs at all]...
 set ts=4 sw=4 expandtab
 " ... but here are some exceptions
+autocmd FileType css          : set ts=2 sw=2
 autocmd FileType html         : set ts=2 sw=2
 autocmd FileType htmldjango   : set ts=2 sw=2
 autocmd FileType java         : set ts=2 sw=2
