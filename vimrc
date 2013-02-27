@@ -28,6 +28,12 @@ autocmd BufReadPost *
 \   exe "normal! g`\"" |
 \ endif
 
+
+" ctrl-p stuff - see http://kien.github.com/ctrlp.vim/
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_working_path_mode = 0
+" set wildignore+=*.swp
+
 " Filetype specific stuff.
 " I generally like 4-space indentation [no TABs at all]...
 set ts=4 sw=4 expandtab
