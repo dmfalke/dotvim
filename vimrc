@@ -13,8 +13,12 @@ set hlsearch
 set tags=~/.tags
 set list listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×
 set t_Co=256
+" set wildmenu
+" set wildmode=list
 syn on
-colorscheme distinguished
+colorscheme jellybeans
+
+let mapleader=" "
 
 filetype plugin indent on
 
@@ -30,9 +34,12 @@ autocmd BufReadPost *
 
 
 " ctrl-p stuff - see http://kien.github.com/ctrlp.vim/
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_working_path_mode = 0
+" let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_working_path_mode = 0
 " set wildignore+=*.swp
+
+let g:Powerline_stl_path_style = 'short'
+"let g:Powerline_symbols = 'unicode'
 
 " Filetype specific stuff.
 " I generally like 4-space indentation [no TABs at all]...
@@ -46,11 +53,13 @@ autocmd FileType javascript   : set ts=2 sw=2
 autocmd FileType jsp          : set ts=2 sw=2
 autocmd FileType ruby         : set ts=2 sw=2
 autocmd FileType yaml         : set ts=2 sw=2
+autocmd FileType xml          : set ts=2 sw=2
 "autocmd FileType text         : set wrap linebreak spell
 autocmd FileType text         : Prose
 
 " mapping of extensions to filetypes
-au BufNewFile,BufRead *.tag set filetype=jsp
+" au BufNewFile,BufRead *.tag set filetype=jsp
+au BufNewFile,BufRead *.json set filetype=javascript
 
 
 command! Prose inoremap <buffer> . .<C-G>u|

@@ -1,5 +1,5 @@
 "set background=light
-colorscheme github
+"colorscheme distinguished
 set guifont=Monaco:h11
 set guioptions-=T
 set columns=105
