@@ -80,3 +80,13 @@ command! Code silent! iunmap <buffer> .|
             \     tw=74 fo=cqr1 showbreak=… nu|
             \ silent! autocmd! PROSE * <buffer>
 
+set exrc
+" ====================== BEGIN ==============================
+" let s:wdir = $PROJECT_HOME
+" if match(getcwd(), s:wdir) != -1
+"     let s:project_vimrc=findfile(".vimrc", ".;" . $PROJECT_HOME)
+"     if exists("s:project_vimrc") && filereadable(expand(s:project_vimrc))
+"         execute "source ".s:project_vimrc
+"     endif
+" endif
+" ====================== END ================================

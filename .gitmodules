@@ -62,3 +62,6 @@
 	path = bundle/multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
     ignore = dirty
+[submodule "bundle/vim-notes"]
+	path = bundle/vim-notes
+	url = https://github.com/xolox/vim-notes.git
