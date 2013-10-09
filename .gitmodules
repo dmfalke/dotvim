@@ -50,10 +50,6 @@
 	path = bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
     ignore = dirty
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
-    ignore = dirty
 [submodule "bundle/colorschemes"]
 	path = bundle/colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
@@ -62,6 +58,15 @@
 	path = bundle/multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
     ignore = dirty
-[submodule "bundle/vim-notes"]
-	path = bundle/vim-notes
-	url = https://github.com/xolox/vim-notes.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/node"]
+	path = bundle/node
+	url = https://github.com/moll/vim-node.git
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
