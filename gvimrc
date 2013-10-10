@@ -1,6 +1,6 @@
 "set background=light
-colorscheme jellybeans
-set guifont=Menlo:h12
+colorscheme distinguished
+set guifont=Droid\ Sans\ Mono:h12
 set guioptions-=T
 set columns=105
 set lines=65
