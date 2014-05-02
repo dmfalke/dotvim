@@ -1,5 +1,5 @@
 "set background=light
-colorscheme distinguished
+colorscheme molokai
 set guifont=Droid\ Sans\ Mono:h12
 set guioptions-=T
 set columns=105
