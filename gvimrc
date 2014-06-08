@@ -1,6 +1,6 @@
-"set background=light
-colorscheme distinguished
-set guifont=Droid\ Sans\ Mono:h12
+colorscheme Tomorrow
+set guifont=Menlo:h12
+"set guifont=Courier:h14
 set guioptions-=T
-set columns=105
-set lines=65
+set columns=110
+set lines=70
