@@ -4,7 +4,7 @@ filetype off
 " Vundle setup
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 filetype plugin indent on
 
 " gui-ness
@@ -16,15 +16,16 @@ Bundle 'bling/vim-airline.git'
 Bundle 'tpope/vim-vinegar.git'
 
 " syntax and language
-Bundle 'tpope/vim-haml.git'
-Bundle 'tpope/vim-markdown.git'
-Bundle 'tpope/vim-ragtag.git'
-Bundle 'pangloss/vim-javascript'
+" Bundle 'tpope/vim-haml.git'
+" Bundle 'tpope/vim-markdown.git'
+" Bundle 'pangloss/vim-javascript'
+" Bundle 'groenewege/vim-less.git'
+" Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'sheerun/vim-polyglot.git'
+
 Bundle 'Shutnik/jshint2.vim.git'
-Bundle 'groenewege/vim-less.git'
 Bundle 'moll/vim-node.git'
-Bundle 'mustache/vim-mustache-handlebars'
-Bundle 'vim-scripts/molokai'
+
 
 " conveniences
 Bundle 'godlygeek/tabular.git'
@@ -35,6 +36,7 @@ Bundle 'tpope/vim-unimpaired.git'
 Bundle 'sjl/gundo.vim'
 Bundle 'vim-scripts/vcscommand.vim'
 Bundle '29decibel/vim-stringify.git'
+Bundle 'tpope/vim-ragtag.git'
 "Bundle 'tpope/vim-classpath.git'
 
 " external integration
@@ -45,5 +47,7 @@ Bundle 'tpope/vim-dispatch.git'
 " Bundle 'altercation/vim-colors-solarized.git'
 Bundle 'flazz/vim-colorschemes.git'
 Bundle 'Lokaltog/vim-distinguished'
+Bundle 'vim-scripts/molokai'
+Bundle 'goatslacker/mango.vim.git'
 
 call vundle#end()

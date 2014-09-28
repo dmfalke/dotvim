@@ -9,14 +9,16 @@ let mapleader=","
 set encoding=utf-8
 set nu
 set ai
-set laststatus=2
+set cursorline
 set showmatch
 set incsearch
+set laststatus=2
 set ruler
 set hlsearch
 set list listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×
 syn on
-colorscheme molokai
+colorscheme jelleybeans
+" highlight Comment cterm=italic
 
 " Open file with cursor at last position...
 autocmd BufReadPost *
@@ -25,12 +27,12 @@ autocmd BufReadPost *
 \ endif
 
 
-" ctrl-p stuff - see http://kien.github.com/ctrlp.vim/
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_root_markers = ['Capfile']
 set wildignore+=*.swp
+
+" ultisnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 let g:notes_directories = ['~/Dropbox/Notes']
 
