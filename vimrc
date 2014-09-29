@@ -1,8 +1,4 @@
-" Must appear before "filetype on"
-" call pathogen#runtime_append_all_bundles()
-" call pathogen#helptags()
-
-source ~/.vim/bundles.vim
+execute pathogen#infect()
 
 let mapleader=","
 

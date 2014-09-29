@@ -1,6 +1,39 @@
 #!/usr/bin/env bash
 
-mkdir -p ~/.vim/bundle
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# add vim plugin github repo ids here
+repos="$repos bling/vim-airline.git"
+repos="$repos tpope/vim-vinegar.git"
+repos="$repos sheerun/vim-polyglot.git"
+repos="$repos Shutnik/jshint2.vim.git"
+repos="$repos moll/vim-node.git"
+repos="$repos godlygeek/tabular.git"
+repos="$repos terryma/vim-multiple-cursors.git"
+repos="$repos tpope/vim-fugitive.git"
+repos="$repos tpope/vim-surround.git"
+repos="$repos tpope/vim-unimpaired.git"
+repos="$repos sjl/gundo.vim"
+repos="$repos vim-scripts/vcscommand.vim"
+repos="$repos 29decibel/vim-stringify.git"
+repos="$repos tpope/vim-ragtag.git"
+repos="$repos mileszs/ack.vim.git"
+repos="$repos tpope/vim-dispatch.git"
+repos="$repos flazz/vim-colorschemes.git"
+repos="$repos Lokaltog/vim-distinguished"
+repos="$repos vim-scripts/molokai"
+repos="$repos goatslacker/mango.vim.git"
 
-vim +PluginInstall +qall
+# create symlinks
+ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/gvimrc ~/.gvimrc
+
+# install pathogen; see https://github.com/tpope/vim-pathogen#installation
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+  curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+# install vim plugin repos
+cd ~/.vim/bundle
+for repo in $repos
+do
+  git clone https://github.com/$repo
+done
+cd -
