@@ -1,26 +1,7 @@
 #!/usr/bin/env bash
 
-# add vim plugin github repo ids here
-repos="$repos bling/vim-airline.git"
-repos="$repos tpope/vim-vinegar.git"
-repos="$repos sheerun/vim-polyglot.git"
-repos="$repos Shutnik/jshint2.vim.git"
-repos="$repos moll/vim-node.git"
-repos="$repos godlygeek/tabular.git"
-repos="$repos terryma/vim-multiple-cursors.git"
-repos="$repos tpope/vim-fugitive.git"
-repos="$repos tpope/vim-surround.git"
-repos="$repos tpope/vim-unimpaired.git"
-repos="$repos sjl/gundo.vim"
-repos="$repos vim-scripts/vcscommand.vim"
-repos="$repos 29decibel/vim-stringify.git"
-repos="$repos tpope/vim-ragtag.git"
-repos="$repos mileszs/ack.vim.git"
-repos="$repos tpope/vim-dispatch.git"
-repos="$repos flazz/vim-colorschemes.git"
-repos="$repos Lokaltog/vim-distinguished"
-repos="$repos vim-scripts/molokai"
-repos="$repos goatslacker/mango.vim.git"
+# include repos
+source ./repos
 
 # create symlinks
 ln -s ~/.vim/vimrc ~/.vimrc

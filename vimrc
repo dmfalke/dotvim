@@ -1,10 +1,17 @@
+set directory=~/.vim/swap/
+
+command! -nargs=* Eupath execute "!eutask" <q-args>
+
+" disabled plugins are added here
+let g:pathogen_disabled = [ 'syntastic' ]
+
 execute pathogen#infect()
 
 let mapleader=","
 
 set encoding=utf-8
-set nu
-set ai
+set number
+set autoindent
 set cursorline
 set showmatch
 set incsearch
@@ -12,9 +19,9 @@ set laststatus=2
 set ruler
 set hlsearch
 set list listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×
-syn on
-colorscheme jelleybeans
-" highlight Comment cterm=italic
+syntax on
+filetype plugin indent on
+colorscheme molokai
 
 " Open file with cursor at last position...
 autocmd BufReadPost *
@@ -22,8 +29,22 @@ autocmd BufReadPost *
 \   exe "normal! g`\"" |
 \ endif
 
+" JSX in .js files
+let g:jsx_ext_required = 0
+
+" fenced code blocks in markdown
+let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml']
+
+" ctrl-p
+let g:ctrlp_working_path_mode = ''
+" let g:ctrlp_cmd = 'CtrlPMixed'
 
 set wildignore+=*.swp
+
+" vim-rest-console
+let g:vrc_cookie_jar = '/tmp/vrc_cookie_jar'
+let g:vrc_follow_redirects = 1
+
 
 " ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -38,6 +59,19 @@ let g:Powerline_stl_path_style = 'short'
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['jsxhint']
+let g:syntastic_javascript_jsxhint_args = "--babel"
 
 " by default, {N}gs will put vim to sleep for N seconds
 map gs :call Stringify()<CR>
@@ -60,7 +94,7 @@ command! Prose inoremap <buffer> . .<C-G>u|
             \ inoremap <buffer> ! !<C-G>u|
             \ inoremap <buffer> ? ?<C-G>u|
             \ setlocal spell spelllang=sv,en
-            \     nolist wrap linebreak tw=74
+            \     nolist wrap linebreak tw=80
             \     foldcolumn=0 fo=t1 nonu|
             \ augroup PROSE|
 "            \   autocmd InsertEnter <buffer> set fo+=a|
@@ -71,7 +105,7 @@ command! Code silent! iunmap <buffer> .|
             \ silent! iunmap <buffer> !|
             \ silent! iunmap <buffer> ?|
             \ setlocal nospell nowrap
-            \     tw=74 fo=cqr1 showbreak=… nu|
+            \     tw=0 fo=cqr1 showbreak=… nu|
             \ silent! autocmd! PROSE * <buffer>
 
 set exrc "replaces stuff below 
