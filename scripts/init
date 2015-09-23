@@ -2,6 +2,7 @@
 
 # include repos
 source ./repos
+echo repos: $repos
 
 # create symlinks
 ln -s ~/.vim/vimrc ~/.vimrc

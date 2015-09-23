@@ -67,11 +67,10 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_javascript_checkers = ['jsxhint']
-let g:syntastic_javascript_jsxhint_args = "--babel"
+let g:syntastic_javascript_checkers = ['eslint']
 
 " by default, {N}gs will put vim to sleep for N seconds
 map gs :call Stringify()<CR>
