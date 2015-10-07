@@ -83,7 +83,7 @@ set ts=2 sw=2 expandtab
 "au BufNewFile,BufRead *.tag set filetype=jsp
 au BufNewFile,BufRead *.json set filetype=javascript
 au BufNewFile,BufRead *.handlebars set filetype=mustache
-au BufNewFile,BufRead *.md set filetype=markdown
+au BufNewFile,BufRead *.md set filetype=markdown textwidth=80
 au BufRead,BufNewFile Capfile set ft=ruby
 
 
