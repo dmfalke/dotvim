@@ -3,7 +3,7 @@ set directory=~/.vim/swap/
 command! -nargs=* Eupath execute "!eutask" <q-args>
 
 " disabled plugins are added here
-let g:pathogen_disabled = [ 'syntastic' ]
+" let g:pathogen_disabled = [ 'syntastic' ]
 
 execute pathogen#infect()
 
@@ -21,6 +21,8 @@ set hlsearch
 set list listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×
 syntax on
 filetype plugin indent on
+
+let g:rehash256 = 1
 colorscheme molokai
 
 " Open file with cursor at last position...
@@ -28,9 +30,6 @@ autocmd BufReadPost *
 \ if line("'\"") > 0 && line("'\"") <= line("$") |
 \   exe "normal! g`\"" |
 \ endif
-
-" JSX in .js files
-let g:jsx_ext_required = 0
 
 " fenced code blocks in markdown
 let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml']
@@ -53,12 +52,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 let g:notes_directories = ['~/Dropbox/Notes']
 
-let g:Powerline_stl_path_style = 'short'
-"let g:Powerline_symbols = 'unicode'
-"let g:airline_powerline_fonts = 1
-
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+let g:airline_theme='simple'
 
 " syntastic
 set statusline+=%#warningmsg#
@@ -66,26 +62,36 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi']
+
+let g:polyglot_disabled = ['javascript']
+
+let g:javascript_conceal_function = "ƒ"
 
 " by default, {N}gs will put vim to sleep for N seconds
 map gs :call Stringify()<CR>
 
 " Filetype specific stuff.
-set ts=2 sw=2 expandtab
+set ts=30 sw=2 expandtab
 "autocmd FileType text         : Prose
 
 " mapping of extensions to filetypes
 "au BufNewFile,BufRead *.tag set filetype=jsp
-au BufNewFile,BufRead *.json set filetype=javascript
+"au BufNewFile,BufRead *.json set filetype=javascript
 au BufNewFile,BufRead *.handlebars set filetype=mustache
 au BufNewFile,BufRead *.md set filetype=markdown
 au BufRead,BufNewFile Capfile set ft=ruby
 
+
+" use ack
+set grepprg=ack\ --nogroup\ --column\ $*
+set grepformat=%f:%l:%c:%m
 
 nnoremap <F5> :GundoToggle<CR>
 
@@ -107,4 +113,4 @@ command! Code silent! iunmap <buffer> .|
             \     tw=0 fo=cqr1 showbreak=… nu|
             \ silent! autocmd! PROSE * <buffer>
 
-set exrc "replaces stuff below 
+set exrc
