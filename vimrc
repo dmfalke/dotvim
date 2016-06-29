@@ -3,7 +3,7 @@ set directory=~/.vim/swap/
 command! -nargs=* Eupath execute "!eutask" <q-args>
 
 " disabled plugins are added here
-" let g:pathogen_disabled = [ 'syntastic' ]
+" let g:pathogen_disabled = [ 'polyglot' ]
 
 execute pathogen#infect()
 
@@ -19,6 +19,7 @@ set laststatus=2
 set ruler
 set hlsearch
 set list listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×
+" set conceallevel=1
 syntax on
 filetype plugin indent on
 
@@ -32,7 +33,7 @@ autocmd BufReadPost *
 \ endif
 
 " fenced code blocks in markdown
-let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml']
+let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=json', 'ruby', 'sass', 'xml']
 
 " ctrl-p
 let g:ctrlp_working_path_mode = ''
@@ -70,9 +71,20 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi']
 
-let g:polyglot_disabled = ['javascript']
+" let g:polyglot_disabled = ['purescript']
 
-let g:javascript_conceal_function = "ƒ"
+let g:javascript_conceal_function       = "ƒ"
+let g:javascript_conceal_null           = "ø"
+let g:javascript_conceal_this           = "@"
+let g:javascript_conceal_return         = "⇚"
+let g:javascript_conceal_undefined      = "¿"
+let g:javascript_conceal_NaN            = "ℕ"
+let g:javascript_conceal_prototype      = "¶"
+let g:javascript_conceal_static         = "•"
+let g:javascript_conceal_super          = "Ω"
+let g:javascript_conceal_arrow_function = "⇒"
+
+" let g:javascript_plugin_jsdoc = 1
 
 " by default, {N}gs will put vim to sleep for N seconds
 map gs :call Stringify()<CR>
