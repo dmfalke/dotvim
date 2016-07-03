@@ -20,11 +20,12 @@ set ruler
 set hlsearch
 set list listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×
 " set conceallevel=1
+set bg=dark
 syntax on
 filetype plugin indent on
 
 let g:rehash256 = 1
-colorscheme molokai
+colorscheme off
 
 " Open file with cursor at last position...
 autocmd BufReadPost *
@@ -55,7 +56,7 @@ let g:notes_directories = ['~/Dropbox/Notes']
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='simple'
+let g:airline_theme='lucius'
 
 " syntastic
 set statusline+=%#warningmsg#
