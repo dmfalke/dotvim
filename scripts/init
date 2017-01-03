@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-# include repos
-source ./repos
+script_dir=`dirname $(readlink -f $0)`
+
+# include repos, remove comments and empty lines
+repos=$(cat $script_dir/repos | grep -v '^#' | grep -v '^$')
 echo repos: $repos
 
 # create symlinks
@@ -13,14 +15,14 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
   curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # install vim plugin repos
-cd ~/.vim/bundle
-for repo in $repos
-do
-  git clone https://github.com/$repo
-done
+(
+  cd ~/.vim/bundle
+  for repo in $repos
+  do
+    git clone https://github.com/$repo
+  done
 
-# post git clone commands
+  # post git clone commands
 
-( cd vimproc.vim && make )
-
-cd -
+  ( cd vimproc.vim && make )
+)

@@ -1,42 +1,42 @@
 # add vim plugin github repo ids here
-repos="$repos tpope/vim-sensible.git"
-repos="$repos vim-airline/vim-airline.git"
-repos="$repos vim-airline/vim-airline-themes.git"
-repos="$repos tpope/vim-vinegar.git"
-# repos="$repos kien/ctrlp.vim.git"
+tpope/vim-sensible.git
+vim-airline/vim-airline.git
+vim-airline/vim-airline-themes.git
+tpope/vim-vinegar.git
+# kien/ctrlp.vim.git
 
-repos="$repos Quramy/tsuquyomi.git"
-repos="$repos Shougo/vimproc.vim.git"
-repos="$repos godlygeek/tabular.git"
-repos="$repos terryma/vim-multiple-cursors.git"
-repos="$repos tpope/vim-fugitive.git"
-repos="$repos tpope/vim-surround.git"
-repos="$repos tpope/vim-unimpaired.git"
-repos="$repos tpope/vim-repeat.git"
-repos="$repos sjl/gundo.vim"
-repos="$repos vim-scripts/vcscommand.vim"
-repos="$repos 29decibel/vim-stringify.git"
-repos="$repos tpope/vim-ragtag.git"
-repos="$repos mileszs/ack.vim.git"
-repos="$repos tpope/vim-dispatch.git"
+Shougo/vimproc.vim.git
+Quramy/tsuquyomi.git
+godlygeek/tabular.git
+terryma/vim-multiple-cursors.git
+tpope/vim-fugitive.git
+tpope/vim-surround.git
+tpope/vim-unimpaired.git
+tpope/vim-repeat.git
+sjl/gundo.vim
+vim-scripts/vcscommand.vim
+29decibel/vim-stringify.git
+mileszs/ack.vim.git
+tpope/vim-dispatch.git
 
-repos="$repos flazz/vim-colorschemes.git"
-repos="$repos Lokaltog/vim-distinguished"
-repos="$repos vim-scripts/molokai"
-repos="$repos goatslacker/mango.vim.git"
-repos="$repos pbrisbin/vim-colors-off.git"
+flazz/vim-colorschemes.git
+chriskempson/base16-vim.git
+Lokaltog/vim-distinguished
+tomasr/molokai
+goatslacker/mango.vim.git
+pbrisbin/vim-colors-off.git
 
-repos="$repos nicholasc/vim-seti.git"
+nicholasc/vim-seti.git
 
-repos="$repos sheerun/vim-polyglot.git"
-repos="$repos tpope/vim-haml.git"
-repos="$repos tpope/vim-markdown.git"
-repos="$repos tpope/vim-ragtag.git"
-repos="$repos mxw/vim-jsx.git"
-repos="$repos scrooloose/syntastic.git"
-repos="$repos groenewege/vim-less.git"
-repos="$repos moll/vim-node.git"
-repos="$repos mustache/vim-mustache-handlebars"
-repos="$repos raichoo/purescript-vim.git"
-repos="$repos diepm/vim-rest-console.git"
-repos="$repos chriskempson/base16-vim.git"
+sheerun/vim-polyglot.git
+# tpope/vim-markdown.git
+# mxw/vim-jsx.git
+# groenewege/vim-less.git
+# mustache/vim-mustache-handlebars
+# raichoo/purescript-vim.git
+moll/vim-node.git
+diepm/vim-rest-console.git
+tpope/vim-ragtag.git
+# scrooloose/syntastic.git
+# scrooloose/nerdtree.git
+neomake/neomake.git

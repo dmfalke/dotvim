@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
-
-origin_dir=$CWD
-
-cd ~/.vim/bundle
-for repo in */
-do
-  cd $repo
-  git pull origin
-  cd -
-done
-cd $origin_dir
+(
+  cd ~/.vim/bundle
+  for repo in */
+  do
+    (cd $repo && git pull origin)
+  done
+  (cd vimproc.vim && make)
+)

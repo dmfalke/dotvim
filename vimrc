@@ -3,11 +3,13 @@ set directory=~/.vim/swap/
 command! -nargs=* Eupath execute "!eutask" <q-args>
 
 " disabled plugins are added here
-" let g:pathogen_disabled = [ 'polyglot' ]
+let g:pathogen_disabled = [ 'neomake' ]
+" let g:pathogen_disabled = [ 'syntastic' ]
 
 execute pathogen#infect()
 
 let mapleader=","
+filetype plugin indent on
 
 set encoding=utf-8
 set number
@@ -19,19 +21,21 @@ set laststatus=2
 set ruler
 set hlsearch
 set list listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×
+set mouse=
 " set conceallevel=1
 set bg=dark
 syntax on
-filetype plugin indent on
-
-let g:rehash256 = 1
+let g:molokai_original = 1
 colorscheme off
+" colorscheme badwolf
 
 " Open file with cursor at last position...
 autocmd BufReadPost *
-\ if line("'\"") > 0 && line("'\"") <= line("$") |
-\   exe "normal! g`\"" |
-\ endif
+      \ if line("'\"") > 0 && line("'\"") <= line("$") |
+      \   exe "normal! g`\"" |
+      \ endif
+
+" autocmd BufReadPost,BufWritePost * Neomake
 
 " fenced code blocks in markdown
 let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=json', 'ruby', 'sass', 'xml']
@@ -56,7 +60,8 @@ let g:notes_directories = ['~/Dropbox/Notes']
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='lucius'
+" let g:airline_theme='base16_grayscale'
+let g:airline_theme='monochrome'
 
 " syntastic
 set statusline+=%#warningmsg#
@@ -70,9 +75,13 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
 let g:tsuquyomi_disable_quickfix = 1
+let g:tsuquyomi_javascript_support = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi']
 
-" let g:polyglot_disabled = ['purescript']
+" neomake
+" autocmd! BufWritePost,BufEnter * Neomake
+" let g:neomake_javascript_enabled_makers = ['eslint']
+let g:neomake_typescript_enabled_makers = ['tsuquyomi']
 
 let g:javascript_conceal_function       = "ƒ"
 let g:javascript_conceal_null           = "ø"
@@ -91,7 +100,7 @@ let g:javascript_conceal_arrow_function = "⇒"
 map gs :call Stringify()<CR>
 
 " Filetype specific stuff.
-set ts=30 sw=2 expandtab
+set ts=2 sw=2 expandtab
 "autocmd FileType text         : Prose
 
 " mapping of extensions to filetypes
@@ -102,11 +111,19 @@ au BufNewFile,BufRead *.md set filetype=markdown textwidth=80
 au BufRead,BufNewFile Capfile set ft=ruby
 
 
+" emacs-style command-line shortcuts
+:cnoremap <C-A> <Home>
+:cnoremap <C-F> <Right>
+:cnoremap <C-B> <Left>
+:cnoremap <Esc>b <S-Left>
+:cnoremap <Esc>f <S-Right>
+
 " use ack
 set grepprg=ack\ --nogroup\ --column\ $*
 set grepformat=%f:%l:%c:%m
 
 nnoremap <F5> :GundoToggle<CR>
+nnoremap <F9> :Dispatch<CR>
 
 command! Prose inoremap <buffer> . .<C-G>u|
             \ inoremap <buffer> ! !<C-G>u|
@@ -127,3 +144,4 @@ command! Code silent! iunmap <buffer> .|
             \ silent! autocmd! PROSE * <buffer>
 
 set exrc
+set secure
