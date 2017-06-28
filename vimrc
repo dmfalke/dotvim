@@ -12,6 +12,7 @@ let mapleader=","
 filetype plugin indent on
 
 set encoding=utf-8
+set guifont=Knack\ Regular\ Nerd\ Font\ Complete:h11
 set number
 set autoindent
 set cursorline
@@ -25,9 +26,18 @@ set mouse=
 " set conceallevel=1
 set bg=dark
 syntax on
-let g:molokai_original = 1
-colorscheme off
-" colorscheme badwolf
+
+if &term =~ '256color'
+  " disable Background Color Erase (BCE)
+  set t_ut=
+endif
+
+if has("termguicolors")
+  set termguicolors
+endif
+
+colo base16-default-dark
+" colo molokai
 
 " Open file with cursor at last position...
 autocmd BufReadPost *
@@ -38,11 +48,13 @@ autocmd BufReadPost *
 " autocmd BufReadPost,BufWritePost * Neomake
 
 " fenced code blocks in markdown
-let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=json', 'ruby', 'sass', 'xml']
+let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json', 'ruby', 'sass', 'xml']
 
 " ctrl-p
 let g:ctrlp_working_path_mode = ''
 " let g:ctrlp_cmd = 'CtrlPMixed'
+
+let g:CommandTTraverseSCM = 'pwd'
 
 set wildignore+=*.swp
 
@@ -50,6 +62,8 @@ set wildignore+=*.swp
 let g:vrc_cookie_jar = '/tmp/vrc_cookie_jar'
 let g:vrc_follow_redirects = 1
 
+" vim.slime
+let g:slime_target = "tmux"
 
 " ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -62,6 +76,7 @@ let g:airline_left_sep=''
 let g:airline_right_sep=''
 " let g:airline_theme='base16_grayscale'
 let g:airline_theme='monochrome'
+let g:airline_powerline_fonts = 1
 
 " syntastic
 set statusline+=%#warningmsg#
@@ -108,7 +123,7 @@ set ts=2 sw=2 expandtab
 "au BufNewFile,BufRead *.json set filetype=javascript
 au BufNewFile,BufRead *.handlebars set filetype=mustache
 au BufNewFile,BufRead *.md set filetype=markdown textwidth=80
-au BufRead,BufNewFile Capfile set ft=ruby
+au BufNewFile,BufRead Capfile set ft=ruby
 
 
 " emacs-style command-line shortcuts

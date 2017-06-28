@@ -37,6 +37,13 @@ sheerun/vim-polyglot.git
 moll/vim-node.git
 diepm/vim-rest-console.git
 tpope/vim-ragtag.git
-# scrooloose/syntastic.git
 # scrooloose/nerdtree.git
-neomake/neomake.git
+scrooloose/syntastic.git
+# neomake/neomake.git
+# jpalardy/vim-slime
+
+# filetype glyphs
+ryanoasis/vim-devicons.git
+
+# fuzzy search thing
+wincent/command-t.git
