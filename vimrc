@@ -32,12 +32,12 @@ if &term =~ '256color'
   set t_ut=
 endif
 
-if has("termguicolors")
-  set termguicolors
-endif
+" if has("termguicolors")
+"   set termguicolors
+" endif
 
-colo base16-default-dark
-" colo molokai
+" colo base16-default-dark
+colo off
 
 " Open file with cursor at last position...
 autocmd BufReadPost *
