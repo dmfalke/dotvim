@@ -2,8 +2,12 @@
 (
   cd ~/.vim/bundle
   for repo in */
-  do
-    (cd $repo && git pull origin)
+  do (
+    cd $repo
+    echo $repo
+    git pull origin
+    echo
+  )
   done
   (cd vimproc.vim && make)
   (cd command-t/ruby/command-t/ext/command-t && ruby extconf.rb && make)

@@ -3,8 +3,9 @@ set directory=~/.vim/swap/
 command! -nargs=* Eupath execute "!eutask" <q-args>
 
 " disabled plugins are added here
-let g:pathogen_disabled = [ 'neomake' ]
-" let g:pathogen_disabled = [ 'syntastic' ]
+let g:pathogen_disabled = [ 'neomake', 'nvim-typescript' ]
+
+" let g:deoplete#enable_at_startup = 1
 
 execute pathogen#infect()
 
@@ -24,8 +25,8 @@ set hlsearch
 set list listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×
 set mouse=
 " set conceallevel=1
+syntax enable
 set bg=dark
-syntax on
 
 if &term =~ '256color'
   " disable Background Color Erase (BCE)
@@ -36,8 +37,7 @@ endif
 "   set termguicolors
 " endif
 
-" colo base16-default-dark
-colo off
+colo jellybeans
 
 " Open file with cursor at last position...
 autocmd BufReadPost *
@@ -45,10 +45,8 @@ autocmd BufReadPost *
       \   exe "normal! g`\"" |
       \ endif
 
-" autocmd BufReadPost,BufWritePost * Neomake
-
 " fenced code blocks in markdown
-let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json', 'ruby', 'sass', 'xml']
+let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json', 'jsx=javascript.jsx', 'ruby', 'sass', 'typescript', 'xml']
 
 " ctrl-p
 let g:ctrlp_working_path_mode = ''
@@ -59,8 +57,10 @@ let g:CommandTTraverseSCM = 'pwd'
 set wildignore+=*.swp
 
 " vim-rest-console
-let g:vrc_cookie_jar = '/tmp/vrc_cookie_jar'
-let g:vrc_follow_redirects = 1
+let g:vrc_curl_opts = {
+  \ '-b': '/tmp/vrc_cookie_jar',
+  \ '-LSsi': ''
+\}
 
 " vim.slime
 let g:slime_target = "tmux"
@@ -75,13 +75,14 @@ let g:notes_directories = ['~/Dropbox/Notes']
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 " let g:airline_theme='base16_grayscale'
-let g:airline_theme='monochrome'
+" let g:airline_theme='monochrome'
+let g:airline_theme = 'minimalist'
 let g:airline_powerline_fonts = 1
 
 " syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
@@ -92,11 +93,12 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:tsuquyomi_disable_quickfix = 1
 let g:tsuquyomi_javascript_support = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi']
+let g:tsuquyomi_definition_split = 2
 
 " neomake
 " autocmd! BufWritePost,BufEnter * Neomake
-" let g:neomake_javascript_enabled_makers = ['eslint']
-let g:neomake_typescript_enabled_makers = ['tsuquyomi']
+let g:neomake_javascript_enabled_makers = ['eslint']
+" let g:neomake_typescript_enabled_makers = ['tsc']
 
 let g:javascript_conceal_function       = "ƒ"
 let g:javascript_conceal_null           = "ø"
