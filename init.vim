@@ -1,1 +1,1 @@
-/Users/dfalke/.vimrc
+./vimrc
