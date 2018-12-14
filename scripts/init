@@ -25,5 +25,5 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
   # post git clone commands
 
   ( cd vimproc.vim && make )
-  (cd command-t/ruby/command-t/ext/command-t && ruby extconf.rb && make)
+  # (cd command-t/ruby/command-t/ext/command-t && ruby extconf.rb && make)
 )

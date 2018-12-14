@@ -1,13 +1,9 @@
 # add vim plugin github repo ids here
 tpope/vim-sensible.git
+tpope/vim-vinegar.git
+
 vim-airline/vim-airline.git
 vim-airline/vim-airline-themes.git
-tpope/vim-vinegar.git
-# Shougo/unite.vim.git
-# kien/ctrlp.vim.git
-# Shougo/deoplete.nvim
-# mhartington/nvim-typescript
-# Shougo/denite.nvim
 
 Shougo/vimproc.vim.git
 Quramy/tsuquyomi.git
@@ -31,28 +27,19 @@ goatslacker/mango.vim.git
 pbrisbin/vim-colors-off.git
 nicholasc/vim-seti.git
 rainglow/vim.git
+jacoborus/tender.vim
+ayu-theme/ayu-vim.git
 
 sheerun/vim-polyglot.git
-# plasticboy/vim-markdown.git
 tpope/vim-markdown.git
-# mxw/vim-jsx.git
-# pangloss/vim-javascript.git
 ianks/vim-tsx.git
-# leafgarland/typescript-vim.git
-# HerringtonDarkholme/yats.vim
-# groenewege/vim-less.git
-# mustache/vim-mustache-handlebars
-# raichoo/purescript-vim.git
 moll/vim-node.git
 diepm/vim-rest-console.git
 tpope/vim-ragtag.git
-# scrooloose/nerdtree.git
 scrooloose/syntastic.git
 neomake/neomake.git
-# jpalardy/vim-slime
+
+prettier/vim-prettier.git
 
 # filetype glyphs
 ryanoasis/vim-devicons.git
-
-# fuzzy search thing
-# wincent/command-t.git
