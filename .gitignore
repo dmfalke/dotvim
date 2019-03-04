@@ -1,5 +1,4 @@
 .netrwhist
-bundle
 autoload/pathogen.vim
 swap/*
 !swap/.gitkeep
