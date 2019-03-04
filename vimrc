@@ -41,7 +41,7 @@ if &term =~ '256color'
   set t_ut=
 endif
 
-if has("termguicolors")
+if has("termguicolors") && match($TERM, "screen") == -1
   set termguicolors
 endif
 
