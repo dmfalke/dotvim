@@ -1,6 +1,4 @@
-" colorscheme Tomorrow
-set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline\ Nerd\ Font\ Complete:h11
+set guifont=Fira\ Code\ weight=450\ 9
 set guioptions-=T
 set columns=110
 set lines=70
-highlight Comment gui=italic

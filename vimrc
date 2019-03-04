@@ -3,7 +3,7 @@ set directory=~/.vim/swap/
 command! -nargs=* Eupath execute "!eutask" <q-args>
 
 " disabled plugins are added here
-let g:pathogen_disabled = [ 'neomake', 'nvim-typescript' ]
+let g:pathogen_disabled = []
 
 execute pathogen#infect()
 
@@ -26,9 +26,15 @@ set incsearch
 set laststatus=2
 set ruler
 set hlsearch
-set list listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×
+set list
+set listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×
 set mouse=
+
 " set conceallevel=1
+
+if has("nvim")
+  set inccommand=nosplit
+endif
 
 " disable Background Color Erase (BCE)
 if &term =~ '256color'
@@ -40,11 +46,12 @@ if has("termguicolors")
 endif
 
 syntax enable
-colo tender
 
+colo tender
 " I like VertSplit without a background
 hi VertSplit ctermbg=NONE ctermfg=gray guibg=NONE guifg=gray
 hi Visual cterm=NONE ctermbg=gray gui=NONE guibg=#383838
+hi clear SignColumn
 
 " Open file with cursor at last position...
 autocmd BufReadPost *
@@ -56,6 +63,9 @@ autocmd BufReadPost *
 let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json', 'jsx=javascript.jsx', 'ruby', 'sass', 'typescript', 'xml']
 
 set wildignore+=*.swp
+set wildignorecase
+set wildmenu
+set wildmode=full
 
 " vim-rest-console
 let g:vrc_curl_opts = {
@@ -63,15 +73,74 @@ let g:vrc_curl_opts = {
   \ '-LSsi': ''
 \}
 
+" === start_coc ===
+
+set signcolumn=yes
+set cmdheight=2
+set updatetime=300
+
+" Use `[c` and `]c` for navigate diagnostics
+nmap <silent> [c <Plug>(coc-diagnostic-prev)
+nmap <silent> ]c <Plug>(coc-diagnostic-next)
+
+" Use K for show documentation in preview window
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if &filetype == 'vim'
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+" Remap for format selected region
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
+" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
+vmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Remap for do codeAction of current line
+nmap <leader>ac  <Plug>(coc-codeaction)
+" Fix autofix problem of current line
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+" Use `:Format` for format current buffer
+command! -nargs=0 Format :call CocAction('format')
+
+" Use `:Fold` for fold current buffer
+command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+
+" Remap keys for coc gotos
+nmap <silent> <C-]> <Plug>(coc-definition)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" === end_coc ===
+
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_theme = 'tender'
 let g:airline_powerline_fonts = 1
+let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
+let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
 
 " syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
@@ -104,9 +173,6 @@ let g:javascript_conceal_arrow_function = "⇒"
 
 " let g:javascript_plugin_jsdoc = 1
 
-" by default, {N}gs will put vim to sleep for N seconds
-map gs :call Stringify()<CR>
-
 " Filetype specific stuff.
 set ts=2 sw=2 expandtab
 "autocmd FileType text         : Prose
@@ -119,18 +185,18 @@ au BufNewFile,BufRead *.md set filetype=markdown textwidth=80
 au BufNewFile,BufRead Capfile set ft=ruby
 
 " emacs-style command-line shortcuts
-:cnoremap <C-A> <Home>
-:cnoremap <C-F> <Right>
-:cnoremap <C-B> <Left>
-:cnoremap <Esc>b <S-Left>
-:cnoremap <Esc>f <S-Right>
+cnoremap <C-A> <Home>
+cnoremap <C-F> <Right>
+cnoremap <C-B> <Left>
+cnoremap <Esc>b <S-Left>
+cnoremap <Esc>f <S-Right>
 
 " use ack
 set grepprg=ack\ --nogroup\ --column\ $*
 set grepformat=%f:%l:%c:%m
 
-nnoremap <F5> :GundoToggle<CR>
-nnoremap <F9> :Dispatch<CR>
+" nnoremap <F5> :GundoToggle<CR>
+" nnoremap <F9> :Dispatch<CR>
 nnoremap <C-P> :FZF<CR>
 
 command! Prose inoremap <buffer> . .<C-G>u|
