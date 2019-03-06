@@ -1,5 +1,5 @@
 {
   "tsserver.log": "verbose",
-  "coc.preferences.rootPatterns": [".vim", ".git", ".hg", ".projections.json", "tsconfig.json", "pom.xml"],
+  "coc.preferences.rootPatterns": ["tsconfig.json", "pom.xml", ".vim", ".git", ".hg", ".projections.json"],
   "coc.preferences.jumpCommand": "drop"
 }

@@ -199,6 +199,8 @@ set grepformat=%f:%l:%c:%m
 " nnoremap <F9> :Dispatch<CR>
 nnoremap <C-P> :FZF<CR>
 
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+
 command! Prose inoremap <buffer> . .<C-G>u|
             \ inoremap <buffer> ! !<C-G>u|
             \ inoremap <buffer> ? ?<C-G>u|
