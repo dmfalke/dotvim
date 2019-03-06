@@ -1,69 +1,69 @@
-[submodule "bundle/vim-sensible"]
-	path = bundle/vim-sensible
+[submodule "pack/submodules/start/vim-sensible"]
+	path = pack/submodules/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible
-[submodule "bundle/vim-vinegar"]
-	path = bundle/vim-vinegar
+[submodule "pack/submodules/start/vim-vinegar"]
+	path = pack/submodules/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar
-[submodule "bundle/coc.nvim"]
-	path = bundle/coc.nvim
+[submodule "pack/submodules/start/coc.nvim"]
+	path = pack/submodules/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
+[submodule "pack/submodules/start/vim-airline"]
+	path = pack/submodules/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
-[submodule "bundle/vim-airline-themes"]
-	path = bundle/vim-airline-themes
+[submodule "pack/submodules/start/vim-airline-themes"]
+	path = pack/submodules/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "bundle/tabular"]
-	path = bundle/tabular
+[submodule "pack/submodules/start/tabular"]
+	path = pack/submodules/start/tabular
 	url = https://github.com/godlygeek/tabular
-[submodule "bundle/vim-multiple-cursors"]
-	path = bundle/vim-multiple-cursors
+[submodule "pack/submodules/start/vim-multiple-cursors"]
+	path = pack/submodules/start/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
-[submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
+[submodule "pack/submodules/start/vim-fugitive"]
+	path = pack/submodules/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
+[submodule "pack/submodules/start/vim-surround"]
+	path = pack/submodules/start/vim-surround
 	url = https://github.com/tpope/vim-surround
-[submodule "bundle/vim-unimpaired"]
-	path = bundle/vim-unimpaired
+[submodule "pack/submodules/start/vim-unimpaired"]
+	path = pack/submodules/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
-[submodule "bundle/vim-repeat"]
-	path = bundle/vim-repeat
+[submodule "pack/submodules/start/vim-repeat"]
+	path = pack/submodules/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat
-[submodule "bundle/gundo.vim"]
-	path = bundle/gundo.vim
+[submodule "pack/submodules/start/gundo.vim"]
+	path = pack/submodules/start/gundo.vim
 	url = https://github.com/sjl/gundo.vim
-[submodule "bundle/vcscommand.vim"]
-	path = bundle/vcscommand.vim
+[submodule "pack/submodules/start/vcscommand.vim"]
+	path = pack/submodules/start/vcscommand.vim
 	url = https://github.com/vim-scripts/vcscommand.vim
-[submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
+[submodule "pack/submodules/start/ack.vim"]
+	path = pack/submodules/start/ack.vim
 	url = https://github.com/mileszs/ack.vim
-[submodule "bundle/tender.vim"]
-	path = bundle/tender.vim
+[submodule "pack/submodules/start/tender.vim"]
+	path = pack/submodules/start/tender.vim
 	url = https://github.com/jacoborus/tender.vim
-[submodule "bundle/vim-polyglot"]
-	path = bundle/vim-polyglot
+[submodule "pack/submodules/start/vim-polyglot"]
+	path = pack/submodules/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
+[submodule "pack/submodules/start/vim-markdown"]
+	path = pack/submodules/start/vim-markdown
 	url = https://github.com/tpope/vim-markdown
-[submodule "bundle/vim-tsx"]
-	path = bundle/vim-tsx
+[submodule "pack/submodules/start/vim-tsx"]
+	path = pack/submodules/start/vim-tsx
 	url = https://github.com/ianks/vim-tsx
-[submodule "bundle/vim-node"]
-	path = bundle/vim-node
+[submodule "pack/submodules/start/vim-node"]
+	path = pack/submodules/start/vim-node
 	url = https://github.com/moll/vim-node
-[submodule "bundle/vim-rest-console"]
-	path = bundle/vim-rest-console
+[submodule "pack/submodules/start/vim-rest-console"]
+	path = pack/submodules/start/vim-rest-console
 	url = https://github.com/diepm/vim-rest-console
-[submodule "bundle/vim-ragtag"]
-	path = bundle/vim-ragtag
+[submodule "pack/submodules/start/vim-ragtag"]
+	path = pack/submodules/start/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag
-[submodule "bundle/vim-prettier"]
-	path = bundle/vim-prettier
+[submodule "pack/submodules/start/vim-prettier"]
+	path = pack/submodules/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier
-[submodule "bundle/vim-devicons"]
-	path = bundle/vim-devicons
+[submodule "pack/submodules/start/vim-devicons"]
+	path = pack/submodules/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons

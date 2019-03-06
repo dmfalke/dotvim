@@ -2,11 +2,6 @@ set directory=~/.vim/swap/
 
 command! -nargs=* Eupath execute "!eutask" <q-args>
 
-" disabled plugins are added here
-let g:pathogen_disabled = []
-
-execute pathogen#infect()
-
 set rtp+=~/repos/fzf
 
 let mapleader=","

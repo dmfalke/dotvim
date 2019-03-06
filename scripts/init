@@ -6,8 +6,9 @@ script_dir=`dirname $(readlink -f $0)`
 ln -sf ~/.vim/vimrc ~/.vimrc
 ln -sf ~/.vim/gvimrc ~/.gvimrc
 
+## USING VIM PACK NOW ##
 # install pathogen; see https://github.com/tpope/vim-pathogen#installation
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-  curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+# mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+#   curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 [ -e $script_dir/update_bundles ] && $script_dir/update_bundles
