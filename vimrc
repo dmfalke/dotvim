@@ -42,11 +42,42 @@ endif
 
 syntax enable
 
-colo tender
+" Colors
+" ======
+
 " I like VertSplit without a background
+colo tender
 hi VertSplit ctermbg=NONE ctermfg=gray guibg=NONE guifg=gray
 hi Visual cterm=NONE ctermbg=gray gui=NONE guibg=#383838
 hi clear SignColumn
+let g:airline_theme='tender'
+set fillchars=vert:\|
+
+" colo OceanicNext
+" let g:airline_theme='minimalist'
+
+" set background=light
+" colo snow
+" let g:airline_theme = 'snow_light'
+
+" set background=light
+" colo off
+" let g:airline_theme='pencil'
+
+" set background=light
+" colo off
+" let g:airline_theme='minimalist'
+
+" set background=light
+" colo github
+" hi clear SignColumn
+" hi LineNr guibg=#F8F8FF
+
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline_powerline_fonts = 1
+let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
+let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
 
 " Open file with cursor at last position...
 autocmd BufReadPost *
@@ -117,56 +148,13 @@ command! -nargs=0 Format :call CocAction('format')
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " Remap keys for coc gotos
-nmap <silent> <C-]> <Plug>(coc-definition)
+" nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " === end_coc ===
-
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-let g:airline_theme = 'tender'
-let g:airline_powerline_fonts = 1
-let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
-let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
-
-" syntastic
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_typescript_checkers = ['tsuquyomi']
-
-let g:tsuquyomi_disable_quickfix = 1
-let g:tsuquyomi_javascript_support = 1
-let g:tsuquyomi_definition_split = 2
-let g:tsuquyomi_single_quote_import = 1
-
-" neomake
-" autocmd! BufWritePost,BufEnter * Neomake
-" let g:neomake_javascript_enabled_makers = ['eslint']
-" let g:neomake_typescript_enabled_makers = ['tsc']
-
-let g:javascript_conceal_function       = "ƒ"
-let g:javascript_conceal_null           = "ø"
-let g:javascript_conceal_this           = "@"
-let g:javascript_conceal_return         = "⇚"
-let g:javascript_conceal_undefined      = "¿"
-let g:javascript_conceal_NaN            = "ℕ"
-let g:javascript_conceal_prototype      = "¶"
-let g:javascript_conceal_static         = "•"
-let g:javascript_conceal_super          = "Ω"
-let g:javascript_conceal_arrow_function = "⇒"
-
-" let g:javascript_plugin_jsdoc = 1
 
 " Filetype specific stuff.
 set ts=2 sw=2 expandtab
@@ -190,7 +178,7 @@ cnoremap <Esc>f <S-Right>
 set grepprg=ack\ --nogroup\ --column\ $*
 set grepformat=%f:%l:%c:%m
 
-" nnoremap <F5> :GundoToggle<CR>
+nnoremap <F5> :GundoToggle<CR>
 " nnoremap <F9> :Dispatch<CR>
 nnoremap <C-P> :FZF<CR>
 

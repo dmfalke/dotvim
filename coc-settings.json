@@ -1,5 +1,9 @@
 {
   "tsserver.log": "verbose",
   "coc.preferences.rootPatterns": ["tsconfig.json", "pom.xml", ".vim", ".git", ".hg", ".projections.json"],
-  "coc.preferences.jumpCommand": "drop"
+  "coc.preferences.jumpCommand": "vsplit",
+  "diagnostic.errorSign": "▐",
+  "diagnostic.infoSign": "▐",
+  "diagnostic.hintSign": "▐",
+  "html.enable": true
 }

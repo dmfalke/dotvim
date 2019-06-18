@@ -67,3 +67,15 @@
 [submodule "pack/submodules/start/vim-devicons"]
 	path = pack/submodules/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
+[submodule "pack/submodules/start/vim-colors-solarized"]
+	path = pack/submodules/start/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "pack/submodules/start/awesome-vim-colorschemes"]
+	path = pack/submodules/start/awesome-vim-colorschemes
+	url = git@github.com:rafi/awesome-vim-colorschemes.git
+[submodule "pack/submodules/start/vim-colors-pencil"]
+	path = pack/submodules/start/vim-colors-pencil
+	url = https://github.com/reedes/vim-colors-pencil.git
+[submodule "pack/submodules/start/vim-colors-off"]
+	path = pack/submodules/start/vim-colors-off
+	url = git@github.com:pbrisbin/vim-colors-off.git
