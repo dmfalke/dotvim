@@ -5,10 +5,13 @@ script_dir=`dirname $(readlink -f $0)`
 # create symlinks
 ln -sf ~/.vim/vimrc ~/.vimrc
 ln -sf ~/.vim/gvimrc ~/.gvimrc
+ln -sf ~/.vim ~/.config/nvim
 
 ## USING VIM PACK NOW ##
 # install pathogen; see https://github.com/tpope/vim-pathogen#installation
 # mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 #   curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+(cd ~/.vim && git submodule init && git submodule update)
 
 [ -e $script_dir/update_bundles ] && $script_dir/update_bundles
