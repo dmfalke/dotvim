@@ -1,6 +1,6 @@
 set directory=~/.vim/swap/
 
-command! -nargs=* Eupath execute "!eutask" <q-args>
+command! -nargs=* Eutask execute "term eutask" <q-args>
 
 set rtp+=~/repos/fzf
 
@@ -10,8 +10,8 @@ filetype plugin indent on
 set nowrap
 set encoding=utf-8
 set guifont=Knack\ Regular\ Nerd\ Font\ Complete:h11
-set number
-set relativenumber
+set nonumber
+set norelativenumber
 set autoindent
 set cursorline
 set showmatch
@@ -46,11 +46,33 @@ syntax enable
 " ======
 
 " I like VertSplit without a background
-colo tender
-hi VertSplit ctermbg=NONE ctermfg=gray guibg=NONE guifg=gray
-hi Visual cterm=NONE ctermbg=gray gui=NONE guibg=#383838
+set background=dark
+
+" let g:jellybeans_overrides = {
+" \    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
+" \}
+" if has('termguicolors') && &termguicolors
+"     let g:jellybeans_overrides['background']['guibg'] = 'none'
+" endif
+" colo jellybeans
+
+" let g:hybrid_transparent_background = 1
+" colo hybrid_reverse
+
+colo codedark
+
+" molokai START
+" colo molokai_dark
+" make cursor more visible when matching
+" hi MatchParen guifg=#FD971F guibg=#000000 gui=bold
+" molokai END
+
+" hi VertSplit ctermbg=NONE ctermfg=gray guibg=NONE guifg=gray
+" hi VertSplit ctermbg=NONE guibg=NONE
+" hi Visual cterm=NONE ctermbg=gray gui=NONE guibg=#383838
 hi clear SignColumn
-let g:airline_theme='tender'
+" hi clear CursorLine
+let g:airline_theme='minimalist'
 set fillchars=vert:\|
 
 " colo OceanicNext
@@ -168,15 +190,17 @@ au BufNewFile,BufRead *.md set filetype=markdown textwidth=80
 au BufNewFile,BufRead Capfile set ft=ruby
 
 " emacs-style command-line shortcuts
-cnoremap <C-A> <Home>
-cnoremap <C-F> <Right>
-cnoremap <C-B> <Left>
-cnoremap <Esc>b <S-Left>
-cnoremap <Esc>f <S-Right>
+" cnoremap <C-A> <Home>
+" cnoremap <C-F> <Right>
+" cnoremap <C-B> <Left>
+" cnoremap <Esc>b <S-Left>
+" cnoremap <Esc>f <S-Right>
 
 " use ack
-set grepprg=ack\ --nogroup\ --column\ $*
-set grepformat=%f:%l:%c:%m
+" set grepprg=ack\ --nogroup\ --column\ $*
+" set grepformat=%f:%l:%c:%m
+
+set grepprg=rg\ --vimgrep
 
 nnoremap <F5> :GundoToggle<CR>
 " nnoremap <F9> :Dispatch<CR>

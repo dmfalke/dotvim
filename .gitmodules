@@ -79,3 +79,9 @@
 [submodule "pack/submodules/start/vim-colors-off"]
 	path = pack/submodules/start/vim-colors-off
 	url = git@github.com:pbrisbin/vim-colors-off.git
+[submodule "pack/submodules/start/okaidia"]
+	path = pack/submodules/start/okaidia
+	url = git@github.com:lawrence-yu/okaidia.git
+[submodule "pack/submodules/start/colorschemes"]
+	path = pack/submodules/start/colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
