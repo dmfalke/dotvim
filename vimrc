@@ -2,7 +2,7 @@ set directory=~/.vim/swap/
 
 command! -nargs=* Eutask execute "term eutask" <q-args>
 
-set rtp+=~/repos/fzf
+set rtp+=~/.fzf
 
 let mapleader=","
 filetype plugin indent on
