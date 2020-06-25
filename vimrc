@@ -3,8 +3,9 @@ set directory=~/.vim/swap/
 command! -nargs=* Eutask execute "term eutask" <q-args>
 
 set rtp+=~/.fzf
+set rtp+=~/.vim/pack/submodules/start/onehalf/vim
 
-let mapleader=","
+let mapleader=" "
 filetype plugin indent on
 
 set nowrap
@@ -56,10 +57,12 @@ set background=dark
 " endif
 " colo jellybeans
 
-" let g:hybrid_transparent_background = 1
-" colo hybrid_reverse
+"let g:hybrid_transparent_background = 1
+" colo hybrid
+" let g:airline_theme='hybrid'
 
-colo codedark
+colo one
+let g:airline_theme='onehalfdark'
 
 " molokai START
 " colo molokai_dark
@@ -72,7 +75,6 @@ colo codedark
 " hi Visual cterm=NONE ctermbg=gray gui=NONE guibg=#383838
 hi clear SignColumn
 " hi clear CursorLine
-let g:airline_theme='minimalist'
 set fillchars=vert:\|
 
 " colo OceanicNext
@@ -175,6 +177,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gR <Plug>(coc-refactor)
 
 " === end_coc ===
 
