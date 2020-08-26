@@ -91,3 +91,9 @@
 [submodule "pack/submodules/start/onehalf"]
 	path = pack/submodules/start/onehalf
 	url = git@github.com:sonph/onehalf.git
+[submodule "pack/submodules/start/vim-colorschemes"]
+	path = pack/submodules/start/vim-colorschemes
+	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "pack/submodules/start/base16-vim"]
+	path = pack/submodules/start/base16-vim
+	url = git@github.com:chriskempson/base16-vim.git

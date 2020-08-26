@@ -25,6 +25,7 @@ set hlsearch
 set list
 set listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×
 set mouse=
+set modeline
 
 " set conceallevel=1
 
@@ -58,16 +59,16 @@ set background=dark
 " colo jellybeans
 
 "let g:hybrid_transparent_background = 1
-" colo hybrid
-" let g:airline_theme='hybrid'
+"colo hybrid_reverse
+"let g:airline_theme='hybrid'
 
-colo one
-let g:airline_theme='onehalfdark'
+colo base16-default-dark
+let g:airline_theme = 'base16_default'
 
 " molokai START
-" colo molokai_dark
+"colo molokai
 " make cursor more visible when matching
-" hi MatchParen guifg=#FD971F guibg=#000000 gui=bold
+"hi MatchParen guifg=#FD971F guibg=#000000 gui=bold
 " molokai END
 
 " hi VertSplit ctermbg=NONE ctermfg=gray guibg=NONE guifg=gray
@@ -205,9 +206,13 @@ au BufNewFile,BufRead Capfile set ft=ruby
 
 set grepprg=rg\ --vimgrep
 
+let g:gundo_prefer_python3 = 1
 nnoremap <F5> :GundoToggle<CR>
 " nnoremap <F9> :Dispatch<CR>
 nnoremap <C-P> :FZF<CR>
+
+" TODO Toggle window
+nnoremap <leader>ot  :bot term<CR>
 
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
