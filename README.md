@@ -26,6 +26,6 @@ Switch to the `~/.vim` directory, and fetch submodules:
 
     cd ~/.vim
     git submodule add <URL-for-git-repository> pack/submodules/start/<plugin-name>
-    git add .
+    git add pack/submodules/start/<plugin-name>
     git commit -m "Added package submodule"
 
