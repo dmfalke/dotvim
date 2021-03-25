@@ -62,8 +62,14 @@ set background=dark
 "colo hybrid_reverse
 "let g:airline_theme='hybrid'
 
-colo base16-default-dark
-let g:airline_theme = 'base16_default'
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+  let g:airline_theme = 'base16_default'
+else
+  colo base16-default-dark
+  let g:airline_theme = 'base16_default'
+endif
 
 " molokai START
 "colo molokai
