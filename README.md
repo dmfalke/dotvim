@@ -1,11 +1,20 @@
-Installation:
+# Installation
 
     git clone git://github.com/dmfalke/dotvim.git ~/.vim
 
-Create symlinks:
+# Create symlinks
+
+## Vim
 
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
+
+## Neovim
+
+    ln -s ~/.vim/vimrc ~/.config/nvim/init.vim
+    ln -s ~/.vim/pack ~/.local/share/nvim/site/pack
+
+# Install package submodules
 
 Switch to the `~/.vim` directory, and fetch submodules:
 
@@ -13,12 +22,10 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule init
     git submodule update
 
-
-Installing plugins as bundles:
+# Add a new package as a submodule
 
     cd ~/.vim
-    mkdir ~/.vim/bundle, if necessary
-    git submodule add <URL-for-git-repository> bundle/<plugin-name>
+    git submodule add <URL-for-git-repository> pack/submodules/start/<plugin-name>
     git add .
-    git commit -m "Some commit message"
+    git commit -m "Added package submodule"
 
