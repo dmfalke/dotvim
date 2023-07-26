@@ -97,3 +97,6 @@
 [submodule "pack/submodules/start/vim-github-dark"]
 	path = pack/submodules/start/vim-github-dark
 	url = git@github.com:vv9k/vim-github-dark.git
+[submodule "pack/submodules/start/vim-fugitive"]
+	path = pack/submodules/start/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
