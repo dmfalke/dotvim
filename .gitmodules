@@ -19,9 +19,6 @@
 [submodule "pack/submodules/start/vim-multiple-cursors"]
 	path = pack/submodules/start/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
-[submodule "pack/submodules/start/vim-fugitive"]
-	path = pack/submodules/start/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
 [submodule "pack/submodules/start/vim-surround"]
 	path = pack/submodules/start/vim-surround
 	url = https://github.com/tpope/vim-surround
@@ -62,17 +59,11 @@
 	path = pack/submodules/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier
 [submodule "pack/submodules/start/vim-devicons"]
-	path = pack/submodules/start/vim-devicons
+	path = pack/submodules/opt/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
-[submodule "pack/submodules/start/vim-colors-solarized"]
-	path = pack/submodules/start/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "pack/submodules/start/awesome-vim-colorschemes"]
 	path = pack/submodules/start/awesome-vim-colorschemes
 	url = git@github.com:rafi/awesome-vim-colorschemes.git
-[submodule "pack/submodules/start/vim-colors-pencil"]
-	path = pack/submodules/start/vim-colors-pencil
-	url = https://github.com/reedes/vim-colors-pencil.git
 [submodule "pack/submodules/start/vim-colors-off"]
 	path = pack/submodules/start/vim-colors-off
 	url = git@github.com:pbrisbin/vim-colors-off.git
@@ -97,3 +88,12 @@
 [submodule "pack/submodules/start/base16-vim"]
 	path = pack/submodules/start/base16-vim
 	url = git@github.com:chriskempson/base16-vim.git
+[submodule "pack/submodules/vim-checkbox"]
+	path = pack/submodules/start/vim-checkbox
+	url = git@github.com:jkramer/vim-checkbox.git
+[submodule "pack/submodules/start/typewriter-vim"]
+	path = pack/submodules/start/typewriter-vim
+	url = git@github.com:logico/typewriter-vim.git
+[submodule "pack/submodules/start/vim-github-dark"]
+	path = pack/submodules/start/vim-github-dark
+	url = git@github.com:vv9k/vim-github-dark.git

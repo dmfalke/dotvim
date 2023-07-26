@@ -2,7 +2,11 @@ set directory=~/.vim/swap/
 
 command! -nargs=* Eutask execute "term eutask" <q-args>
 
-set rtp+=~/.fzf
+if filereadable(expand("/usr/share/doc/fzf/examples/fzf.vim"))
+  source /usr/share/doc/fzf/examples/fzf.vim
+else
+  set rtp+=~/.fzf
+endif
 set rtp+=~/.vim/pack/submodules/start/onehalf/vim
 
 let mapleader=" "
@@ -47,28 +51,49 @@ syntax enable
 " Colors
 " ======
 
-" I like VertSplit without a background
-set background=dark
-
-" let g:jellybeans_overrides = {
-" \    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
-" \}
-" if has('termguicolors') && &termguicolors
-"     let g:jellybeans_overrides['background']['guibg'] = 'none'
-" endif
-" colo jellybeans
-
-"let g:hybrid_transparent_background = 1
-"colo hybrid_reverse
-"let g:airline_theme='hybrid'
-
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
-  let g:airline_theme = 'base16_default'
+  "let g:airline_theme = 'base16_default'
 else
-  colo base16-default-dark
-  let g:airline_theme = 'base16_default'
+  set background=dark
+  " colo tender
+  " let g:airline_theme = 'tender'
+
+  " colo base16-default-dark
+  " let g:airline_theme = 'base16_default'
+
+  " colo onedark
+  " let g:airline_theme = 'onedark'
+
+  colo OceanicNext
+  let g:airline_theme = 'oceanicnextminimal'
+
+  " colo molokai
+  " let g:airline_theme = 'molokai'
+
+  "colo base16-bright
+  "let g:airline_theme = 'base16_bright'
+
+  " set background=dark
+  " color off
+  " let g:airline_theme = 'monochrome'
+
+  " set background=dark
+  " colo base16-default-dark
+  " let g:airline_theme = 'base16_default'
+  " colo base16-material
+  " let g:airline_theme = 'base16'
+
+  "color monochrome
+  "let g:airline_theme = 'monochrome'
+
+  "color iceberg
+  "let g:airline_theme = 'iceberg'
+
+  " let ayucolor="dark"
+  " colorscheme ayu
+  " let g:airline_theme = 'ayu_dark'
 endif
 
 " molokai START
@@ -77,12 +102,13 @@ endif
 "hi MatchParen guifg=#FD971F guibg=#000000 gui=bold
 " molokai END
 
-" hi VertSplit ctermbg=NONE ctermfg=gray guibg=NONE guifg=gray
+" I like VertSplit without a background
+" hi VertSplit ctermbg=NONE ctermfg=black guibg=NONE guifg=black
 " hi VertSplit ctermbg=NONE guibg=NONE
 " hi Visual cterm=NONE ctermbg=gray gui=NONE guibg=#383838
 hi clear SignColumn
 " hi clear CursorLine
-set fillchars=vert:\|
+" set fillchars=vert:\|
 
 " colo OceanicNext
 " let g:airline_theme='minimalist'
@@ -118,6 +144,7 @@ autocmd BufReadPost *
 
 " fenced code blocks in markdown
 let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json', 'jsx=javascript.jsx', 'ruby', 'sass', 'typescript', 'xml']
+let g:markdown_folding = 1
 
 set wildignore+=*.swp
 set wildignorecase
@@ -221,6 +248,21 @@ nnoremap <C-P> :FZF<CR>
 nnoremap <leader>ot  :bot term<CR>
 
 let g:fzf_history_dir = '~/.local/share/fzf-history'
+" Customize fzf colors to match your color scheme
+let g:fzf_colors =
+            \ { 'fg':      ['fg', 'Normal'],
+            \ 'bg':      ['bg', 'Normal'],
+            \ 'hl':      ['fg', 'Comment'],
+            \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+            \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+            \ 'hl+':     ['fg', 'Statement'],
+            \ 'info':    ['fg', 'PreProc'],
+            \ 'border':  ['fg', 'Ignore'],
+            \ 'prompt':  ['fg', 'Conditional'],
+            \ 'pointer': ['fg', 'Exception'],
+            \ 'marker':  ['fg', 'Keyword'],
+            \ 'spinner': ['fg', 'Label'],
+            \ 'header':  ['fg', 'Comment'] }
 
 command! Prose inoremap <buffer> . .<C-G>u|
             \ inoremap <buffer> ! !<C-G>u|

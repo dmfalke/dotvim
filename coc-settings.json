@@ -1,11 +1,18 @@
+// vim: ft=json5
+
 {
   "tsserver.log": "verbose",
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   // "coc.preferences.rootPatterns": ["tsconfig.json", "pom.xml", ".vim", ".git", ".hg", ".projections.json"],
-  "coc.preferences.jumpCommand": "vsplit",
+  // "coc.preferences.jumpCommand": "vsplit",
   "diagnostic.errorSign": "▐",
   "diagnostic.infoSign": "▐",
   "diagnostic.hintSign": "▐",
-  "html.enable": true
+  "html.enable": true,
+  "git.addedSign.hlGroup": "CocDiffAdd",
+	"git.changedSign.hlGroup": "CocDiffChange",
+	"git.removedSign.hlGroup": "CocDiffDelete",
+	"git.topRemovedSign.hlGroup": "CocDiffDelete",
+	"git.changeRemovedSign.hlGroup": "CocDiffDelete",
 }
