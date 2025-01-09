@@ -14,5 +14,6 @@
 	"git.changedSign.hlGroup": "CocDiffChange",
 	"git.removedSign.hlGroup": "CocDiffDelete",
 	"git.topRemovedSign.hlGroup": "CocDiffDelete",
-	"git.changeRemovedSign.hlGroup": "CocDiffDelete",
+  "git.changeRemovedSign.hlGroup": "CocDiffDelete",
+  "java.import.gradle.java.home": "/usr/lib/jvm/jdk-15.0.2",
 }

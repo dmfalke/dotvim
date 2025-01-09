@@ -48,26 +48,76 @@ endif
 
 syntax enable
 
+" let g:polyglot_disabled = ['typescript']
+
+let g:loaded_lightline = 1
+
 " Colors
 " ======
 
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-  "let g:airline_theme = 'base16_default'
+if exists('$BASE16_THEME')
+      \ && (!exists('g:colors_name') || g:colors_name != 'base16-$BASE16_THEME')
+    let base16colorspace=256
+    colorscheme base16-$BASE16_THEME
+    " let g:airline_theme = 'base16_' . $BASE16_THEME
+    let g:airline_theme = 'base16'
 else
   set background=dark
+
+  " colo codedark
+  " let g:airline_theme = 'minimalist'
+
+  " colo base16-seti
   " colo tender
-  " let g:airline_theme = 'tender'
+  " let g:gruvbox_contrast_dark = 'hard'
+  " let g:gruvbox_contrast_light = 'hard'
+  " let g:airline_theme = 'gruvbox'
+  " colo gruvbox
 
-  " colo base16-default-dark
-  " let g:airline_theme = 'base16_default'
+  " set fillchars+=vert:\|
+  colo tender
+  let g:airline_theme = 'tender'
 
+  " I like VertSplit without a background
+  hi! link VertSplit SignColumn
+  " Make concealed text readable
+  hi! Conceal ctermfg=242 ctermbg=NONE guifg=DarkGrey guibg=NONE
+
+  " let g:sonokai_style = 'default'
+  " let g:sonokai_diagnostic_text_highlight = 1
+  " let g:sonokai_diagnostic_line_highlight = 0
+  " colo sonokai
+  " let g:airline_theme = 'sonokai'
+
+  " colo off
+  " let g:airline_theme = 'minimalist'
+  " hi Normal guibg=NONE ctermbg=NONE
+
+  " let ayucolor="dark"
+  " let g:airline_theme = 'ayu_dark'
+  " colo ayu
+
+  " colo minimalist
+  " let g:airline_theme = 'minimalist'
+
+  " colo base16-tender
+  " let g:airline_theme = 'base16_default_dark'
+
+  " colo base16-ayu-mirage
+  " let g:airline_theme = 'minimalist'
+
+  " colo badwolf
+  " let g:airline_theme = 'minimalist'
+
+  " let g:loaded_airline = 1
   " colo onedark
   " let g:airline_theme = 'onedark'
 
-  colo OceanicNext
-  let g:airline_theme = 'oceanicnextminimal'
+  " colo ghdark
+  " let g:airline_theme = 'ghdark'
+
+  " colo OceanicNext
+  " let g:airline_theme = 'oceanicnextminimal'
 
   " colo molokai
   " let g:airline_theme = 'molokai'
@@ -102,13 +152,9 @@ endif
 "hi MatchParen guifg=#FD971F guibg=#000000 gui=bold
 " molokai END
 
-" I like VertSplit without a background
-" hi VertSplit ctermbg=NONE ctermfg=black guibg=NONE guifg=black
-" hi VertSplit ctermbg=NONE guibg=NONE
 " hi Visual cterm=NONE ctermbg=gray gui=NONE guibg=#383838
-hi clear SignColumn
+" hi clear SignColumn
 " hi clear CursorLine
-" set fillchars=vert:\|
 
 " colo OceanicNext
 " let g:airline_theme='minimalist'
@@ -156,6 +202,8 @@ let g:vrc_curl_opts = {
   \ '-b': '/tmp/vrc_cookie_jar',
   \ '-LSsi': ''
 \}
+
+nmap gt :bot :terminal <CR>
 
 " === start_coc ===
 
@@ -213,6 +261,13 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gR <Plug>(coc-refactor)
 
+if has('nvim-0.4.3') || has('patch-8.2.0750')
+  nnoremap <nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  nnoremap <nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+  inoremap <nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+  inoremap <nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+endif
+
 " === end_coc ===
 
 " Filetype specific stuff.
@@ -242,7 +297,7 @@ set grepprg=rg\ --vimgrep
 let g:gundo_prefer_python3 = 1
 nnoremap <F5> :GundoToggle<CR>
 " nnoremap <F9> :Dispatch<CR>
-nnoremap <C-P> :FZF<CR>
+nnoremap <C-P> :Files<CR>
 
 " TODO Toggle window
 nnoremap <leader>ot  :bot term<CR>
@@ -282,5 +337,5 @@ command! Code silent! iunmap <buffer> .|
             \     tw=0 fo=cqr1 showbreak=… nu|
             \ silent! autocmd! PROSE * <buffer>
 
-set exrc
-set secure
+" set exrc
+" set secure
