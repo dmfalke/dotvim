@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-# ( cd ~/.vim/pack/submodules/start/coc.nvim && ./install.sh )
+( cd ~/.vim/pack/submodules/start/coc.nvim && ./install.sh )

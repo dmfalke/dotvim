@@ -1,5 +1,5 @@
 "set background=dark
-set guifont=Fira\ Code\ weight=450\ 9
+set guifont=JetbrainsMono\ Nerd\ Font\ medium\ 10
 set guioptions-=T
 set guioptions-=m
 set columns=110

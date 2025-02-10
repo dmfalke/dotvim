@@ -75,13 +75,8 @@ else
   " colo gruvbox
 
   " set fillchars+=vert:\|
-  colo tender
-  let g:airline_theme = 'tender'
-
-  " I like VertSplit without a background
-  hi! link VertSplit SignColumn
-  " Make concealed text readable
-  hi! Conceal ctermfg=242 ctermbg=NONE guifg=DarkGrey guibg=NONE
+  " colo tender
+  " let g:airline_theme = 'tender'
 
   " let g:sonokai_style = 'default'
   " let g:sonokai_diagnostic_text_highlight = 1
@@ -113,8 +108,8 @@ else
   " colo onedark
   " let g:airline_theme = 'onedark'
 
-  " colo ghdark
-  " let g:airline_theme = 'ghdark'
+  colo ghdark
+  let g:airline_theme = 'ghdark'
 
   " colo OceanicNext
   " let g:airline_theme = 'oceanicnextminimal'
@@ -144,6 +139,11 @@ else
   " let ayucolor="dark"
   " colorscheme ayu
   " let g:airline_theme = 'ayu_dark'
+
+  " I like VertSplit without a background
+  hi! link VertSplit SignColumn
+  " Make concealed text readable
+  hi! Conceal ctermfg=242 ctermbg=NONE guifg=DarkGrey guibg=NONE
 endif
 
 " molokai START
@@ -206,6 +206,21 @@ let g:vrc_curl_opts = {
 nmap gt :bot :terminal <CR>
 
 " === start_coc ===
+
+let g:coc_global_extensions = [
+      \ 'coc-tsserver',
+      \ 'coc-html',
+      \ 'coc-eslint',
+      \ 'coc-yaml',
+      \ 'coc-xml',
+      \ 'coc-svg',
+      \ 'coc-sql',
+      \ 'coc-sh',
+      \ 'coc-json',
+      \ 'coc-java',
+      \ 'coc-docker',
+      \ 'coc-css',
+      \ ]
 
 set signcolumn=yes
 set cmdheight=2
