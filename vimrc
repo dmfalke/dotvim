@@ -74,9 +74,10 @@ else
   " let g:airline_theme = 'gruvbox'
   " colo gruvbox
 
-  " set fillchars+=vert:\|
-  " colo tender
-  " let g:airline_theme = 'tender'
+  set fillchars+=vert:\|
+  colo tender
+  let g:airline_theme = 'tender'
+  hi Terminal guibg=#282828
 
   " let g:sonokai_style = 'default'
   " let g:sonokai_diagnostic_text_highlight = 1
@@ -108,8 +109,8 @@ else
   " colo onedark
   " let g:airline_theme = 'onedark'
 
-  colo ghdark
-  let g:airline_theme = 'ghdark'
+  " colo ghdark
+  " let g:airline_theme = 'ghdark'
 
   " colo OceanicNext
   " let g:airline_theme = 'oceanicnextminimal'
